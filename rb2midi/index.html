@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>rb2midi - Using Rock Band 2 drum controller to trigger MIDI</title>
+<link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+
+  <table width="800px" border="0" cellspacing="0" cellpadding="0" align="center" >
+    <tr>
+      <td class="horizontal_menu_drums">
+        <table width="800px" border="0" cellpadding="0" cellspacing="0" class="linkcontainer">
+          <tr>
+            <td><div class="navigation"><a href="/" class="main_link">Home</a></div></td>
+            <td><div class="navigation"><a href="/rb2midi/" class="main_link">rb2midi</a></div></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <div id="main-content">
+    <div id="left-column">
+      <div id="logo">
+        <img src="images/rb2midi_icon.gif" alt="rb2midi icon" width="48" height="48" align="left" />
+        <span class="logotxt1">rb2midi</span>
+        <br />
+        <span style="margin-left:15px;">Use your Rock Band 2 wireless drumkit as a MIDI controller</span>
+      </div>
+      <h2><em>rb2midi</em> version 0.48 was first made available on May 5, 2010.
+      </h2>
+      <div id="screenshot-image">
+        <img src="images/rb2midi48.jpg" alt="The main window layout." width="450" height="388" />
+      </div>
+      <div class="box">
+        <h1>Freeware utility for triggering MIDI drums</h1>
+        <p>
+          This is a little program I wrote because I wanted to use my Rock Band 2 drums as a handy MIDI controller for my
+          digital audio workstation, and there didn't seem to be any freely available software to make this easy to do.
+          It works very effectively for a simple utility program, achieving a relatively low latency.
+        </p>
+        <h3>Basic features:</h3>
+        <ul style="margin-top:10px;">
+          <li>Select desired MIDI output interface on startup.</li>
+          <li>Pick the MIDI note triggered by each pad, cymbal and pedal.</li>
+          <li>Control the length and velocity of triggered notes.</li>
+          <li>Velocity sensitivity (4 levels) for pads and cymbals.</li>
+          <li>Load/save settings for particular hardware or VST plugins.</li>
+          <li>Minimizes to system tray to avoid desktop clutter.</li>
+        </ul>
+        <h3>Advanced features (added in version 0.48):</h3>
+        <ul style="margin-top:10px;">
+          <li>Complete redesign of user interface.</li>
+          <li>Use hi-hat pedal to switch between different midi notes on the cymbals.</li>
+          <li>Trigger midi note on pedal up as well as pedal down (if you want to).</li>
+          <li>More control over velocity curve.</li>
+          <li>Randomization of velocity can also be turned on.</li>
+        </ul>
+      </div>
+      <div id="screenshot-image">
+        <img src="images/screenshot2.jpg" alt="Minimized to system tray." width="347" height="113" />
+      </div>
+      <h2>System Requirements</h2>
+      <p>
+        <img src="images/wreceiver.jpg" alt="Microsoft Wireless Gaming Receiver" width="92" height="166" align="left" style="margin-right:10px;margin-bottom:10px;" />
+
+        Ideally you should use this program with one of the <b>Rock Band 2</b> controllers made by <em>Harmonix</em>.
+        This will allow you to take advantage of features such as the velocity sensitive pads and the add-on cymbals.
+        It will also work with Rock Band 1 drumkits, but you get no velocity with the pads on that kit.
+      </p>
+      <p>
+        All the Rock Band 2 kits are <em>wireless</em> controllers.
+        If you have the Xbox 360 drum kit, you will need a wireless receiver of some kind to connect the kit to a PC.
+        The one shown on the left is the <a href="https://support.xbox.com/en-US/xbox-on-windows/accessories/xbox-360-wireless-gaming-receiver-windows" target="_blank">Xbox 360 Wireless Gaming Receiver for Windows</a>, for which this utility was originally developed. I don't
+        think you can actually buy that one any more, but there's a new one for Windows 10 which is much more compact
+        (<a href="https://www.xbox.com/en-US/xbox-one/accessories/adapters/wireless-adapter-windows" target="_blank">Xbox Wireless Adapter for Windows 10</a>).
+      </p>
+      <p>
+        Those who own a Playstation or Wii version of the Rock Band 2 drum kit are the lucky ones. There is a USB wireless
+        receiver included when you buy the kit itself. Just connect the dongle to your PC and you are ready to go!
+        The Wii dongle is shown below on the left, the Playstation dongle is shown on the right. If you are buying a
+        kit purely for MIDI purposes, these are the ones to go for.
+      </p>
+      <div>
+        <img src="images/wiidongle.jpg" alt="Wii Drumkit Wireless Receiver" width="225" height="166" align="left" style="margin-right:10px;margin-bottom:10px;" />
+        <img src="images/psdongle.jpg" alt="Playstation Drumkit Wireless Receiver" width="216" height="166" align="left" style="margin-right:10px;margin-bottom:10px;" />
+      </div>
+      <p>
+        There is one other thing you are likely to need if you want to use this utility to trigger a VSTi plugin in Cubase, Ableton Live,
+        or any other DAW. A <b>MIDI loopback</b> driver (i.e. a virtual patch cable) is needed to route the MIDI messages correctly to the DAW.
+        I use the free program <a href="http://nerds.de/en/loopbe1.html" target="_blank">LoopBe1</a> for this purpose, but there are other
+        free alternatives such as <a href="http://www.sionsoft.com/hubi.html" target="_blank">Hubi's MIDI Loopback Driver</a>
+        and <a href="http://www.midiox.com/myoke.htm" target="_blank">MIDI Yoke</a>.
+      </p>
+      <p>
+        Here is a summary of the configuration I used during development:
+      </p>
+      <ul style="margin-top:10px;">
+        <li>Microsoft Windows XP (service pack 3)</li>
+        <li>Cubase 4 Essentials</li>
+        <li>Xbox 360 Wireless Gaming Receiver for Windows</li>
+        <li>Xbox 360 Wireless Drum Controller for Rock Band 2</li>
+        <li><em>(optional)</em> Madcatz Triple Cymbal Expansion Kit for Rock Band 2</li>
+      </ul>
+      <p></p>
+      <div class="box">
+        <h1>Contact Details</h1>
+        <p>
+          Note that I cannot offer extensive support for this program, but I am interested to hear if you have used the program and
+          like it, especially if your system configuration differs from mine. I would also like to hear about any bugs if you find them,
+          or any feature suggestions you might have.
+        </p>
+        <p>
+          <b>E-mail:</b> rb2midi (at) mattgrounds (dot) com
+        </p>
+      </div>
+    </div>
+    <div id="right-column">
+      <div id="main-image">
+        <img src="images/rb2midi_bigIcon4.jpg" alt="big icon" width="256" height="256" />
+      </div>
+      <div id="main-image">
+        <a href="archives/rb2midi_048.zip" target="_blank">
+          <img id="link-button" src="images/downloadbutton.png" alt="Download now!" width="223" height="55" />
+        </a>
+      </div>
+      <div class="sidebar">
+        <h3>Archive Versions</h3>
+        <div class="box">
+          <ul>
+            <li>
+              <a href="archives/rb2midi_048.zip" target="_blank">rb2midi v0.48</a>
+            </li>
+            <li>
+              <a href="archives/rb2midi_017.zip" target="_blank">rb2midi v0.17</a>
+            </li>
+            <li>
+              <a href="archives/rb2midi_016.zip" target="_blank">rb2midi v0.16</a>
+            </li>
+            <li>
+              <a href="archives/rb2midi_014.zip" target="_blank">rb2midi v0.14</a>
+            </li>
+            <li>
+              <a href="archives/rb2midi_013.zip" target="_blank">rb2midi v0.13</a>
+            </li>
+          </ul>
+        </div>
+        <h3>Useful Links</h3>
+        <div class="box">
+          <ul>
+            <li>
+              <a href="https://support.xbox.com/en-US/xbox-on-windows/accessories/xbox-360-wireless-gaming-receiver-windows" target="_blank">
+                Xbox 360 Wireless Gaming Receiver for Windows
+              </a>
+            </li>
+            <li>
+              <a href="https://www.xbox.com/en-US/xbox-one/accessories/adapters/wireless-adapter-windows" target="_blank">
+                Xbox Wireless Adapter for Windows 10
+              </a>
+            </li>
+            <li>
+              <a href="http://nerds.de/en/loopbe1.html" target="_blank">LoopBe1 MIDI loopback utility</a>
+            </li>
+            <li>
+              <a href="http://www.sionsoft.com/hubi.html" target="_blank">Hubi's MIDI loopback driver</a>
+            </li>
+            <li>
+              <a href="http://www.midiox.com/myoke.htm" target="_blank">MIDI Yoke</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">Copyright &copy; 2009-2017 Matt Grounds, All rights reserved.<br />
+  </div>
+</div>
+
+</body>
+</html>

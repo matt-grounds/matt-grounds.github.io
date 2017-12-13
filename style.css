@@ -1,0 +1,137 @@
+/*** Global Settings ****/
+body {font : normal 12px/1.6em Arial, Helvetica, sans-serif;color : #2a3845;margin : 0;padding : 0;background:#FFFFFF;}
+p { margin : 0;padding : 5px;}
+a:visited, a:link {color : #38445b;text-decoration : underline;background:none;}
+a:hover {color : #38445b;text-decoration : none;background:none;}
+h1 { color : #38445b;margin: 0px 0px 10px 0px;padding-bottom : 10px;font : normal 17px Georgia, serif;border-bottom : 1px solid #efece7;}
+h2 {color : #38445b;margin : 20px 0 10px;padding-bottom : 10px;font : normal 17px Georgia, serif;border-bottom : 1px solid #efece7;}
+h3 {color : #38445b;margin : 10px 0;padding-bottom : 10px;font : bold 14px Arial, Helvetica, sans-serif;border-bottom : 1px solid #efece7;}
+ul {padding:0;margin:0 0 0 17px;list-style: square url(images/newbullet.gif);}
+.box {background : #f7f7f7;border : 1px solid #f0e9eb;padding : 15px;}
+
+
+table.linkcontainer td{
+	background-color: #000000;
+	filter:alpha(opacity=70);
+	opacity: .7;
+	-moz-opacity: .7;
+}
+
+td.horizontal_column {
+	background-color: #FFFFFF;
+	border-top-width: 15px;
+	border-right-width: 0px;
+	border-bottom-width: 30px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	height: 145px;
+	display: inline;
+	vertical-align: top;
+}
+
+td.horizontal_menu_monitors {
+	background-color: #FFFFFF;
+	border-top-width: 15px;
+	border-right-width: 0px;
+	border-bottom-width: 30px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	height: 145px;
+	display: block;
+	vertical-align: top;
+	background-image: url(images/monitors.jpg);
+}
+
+td.horizontal_menu_knobs {
+	background-color: #FFFFFF;
+	border-top-width: 15px;
+	border-right-width: 0px;
+	border-bottom-width: 30px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	height: 145px;
+	display: block;
+	vertical-align: top;
+	background-image: url(images/gknobs.jpg);
+}
+
+td.horizontal_menu_drums {
+	background-color: #FFFFFF;
+	border-top-width: 15px;
+	border-right-width: 0px;
+	border-bottom-width: 30px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	height: 145px;
+	display: block;
+	vertical-align: top;
+	background-image: url(images/rbdrums.jpg);
+}
+
+div.navigation {
+	height: 50px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+a.main_link:active,a.main_link:visited,a.main_link:link{
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	color: #FFFFFF;
+	line-height: 50px;
+}
+
+a.main_link:hover{
+	background-color:#333333;
+	color: #FFFFFF;
+}
+
+/*** Layout ****/
+#wrapper {margin : 0 auto;width : 840px;border-left : 1px solid #f0e9eb;border-right : 1px solid #f0e9eb;}
+#header {margin : 0 1px;}
+#nav {background : #7a2e40;padding : 10px 20px;text-align : right;color : #f6dde3;}
+#nav a:visited, #nav a:link {text-decoration : none;color : #f6dde3;}
+#nav a:hover {text-decoration : underline;color : #f6dde3;}
+#main-content {margin : 0 auto;}
+#logo {margin-bottom : 20px;}
+.logotxt1 {font : normal 17px Georgia, serif;color : #38445b;margin : 10px 0 0 15px;}
+#left-column {width : 480px;padding : 0 30px 30px;float : left;}
+#right-column {width : 295px;float : right;}
+.crd a:visited, .crd a:link, .crd a:hover{text-decoration : none;color : #2a3845;cursor: text;}
+#footer {background : #f7f7f7;border-top : 1px solid #f0e9eb;padding : 10px 15px;clear : both;}
+
+/*** SideBAR ***/
+#main-image {text-align : center;}
+#screenshot-image {text-align : center; margin : 15px 0 15px 0;}
+#link-button {border : none;}
+.sidebar {width : 218px;margin : 0 auto;padding : 10px 25px;background : url(images/shadow.jpg) no-repeat top;}
